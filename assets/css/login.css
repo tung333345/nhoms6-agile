@@ -1,0 +1,103 @@
+
+
+.login-container {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-login {
+    background-color: #db4437;
+    color: white;
+    width: 9em;
+    font-size: 18px;
+}
+.google-login:hover{
+    background-color: #c03e33
+}
+.zalo-login {
+    background-color: #0084ff;
+    color: white;
+    width: 9em;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.login-container input[type="text"],.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.login-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #cd3c2e;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.login-container button[type="submit"]:hover {
+    background-color: #db4437;
+}
+
+.login-container p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.login-container a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
