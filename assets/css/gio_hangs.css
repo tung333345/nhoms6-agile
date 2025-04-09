@@ -1,0 +1,438 @@
+.container-box-cart {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.container-box-cart .body-cart {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.cart-header {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
+    height: 60px;
+    margin-top: 40px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.cart-header a ion-icon {
+    width: 25px;
+    height: 25px;
+    color: #333;
+}
+
+.cart-header .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+}
+
+.btn-cart {
+    margin: 20px 0;
+}
+
+.btn-cart a {
+    height: 45px;
+    background-color: #e20000;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 12px 25px;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.listItem-super-cart {
+    margin: 30px 0;
+}
+
+.listItem-super-cart .top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.listItem-super-cart .rounded-checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+
+.listItem-super-cart .rounded-checkbox:checked {
+    background-color: #e20000;
+    border-color: #e20000;
+}
+
+
+.listItem-super-cart .rounded-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.listItem-super-cart .check-box-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.cart-list-items {
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    padding: 20px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* .cart-item:hover {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+} */
+
+.item-top {
+    display: flex;
+    gap: 15px;
+}
+
+.img-item {
+    width: 120px;
+    height: 120px;
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-left {
+    flex: 1;
+    width: 100%;
+}
+
+.item-left-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.item-left-top .title {
+    font-size: 20px;
+    color: #333;
+    font-weight: 500;
+    flex: 1;
+}
+
+.item-left-top ion-icon {
+    color: #999;
+    font-size: 22px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.item-left-top ion-icon:hover {
+    color: #e20000;
+}
+
+.item-left-bot {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price {
+    font-weight: 600;
+    color: #ee4d2d;
+    font-size: 16px;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action .span {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.action .span:hover {
+    background: #f8f8f8;
+}
+
+.action input {
+    width: 45px;
+    height: 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    margin: 0 5px;
+}
+
+.item-bot {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.item-bot .top {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #333;
+}
+
+.item-bot .content ul {
+    padding-left: 45px;
+    margin: 15px 0;
+}
+
+.item-bot .content li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.bot .left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.bot .right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #e20000;
+    color: #e20000;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart-summary {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+}
+
+.cart-total {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.cart-total span {
+    color: #e20000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.checkout-btn {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #e20000, #ff1a1a);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.checkout-btn:disabled {
+    background: #8f8e8e;
+    color: #c4bfbf;
+    cursor: not-allowed; 
+}
+
+.checkout-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(226,0,0,0.2);
+}
+
+.cart-item .rounded-checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.cart-item .rounded-checkbox:checked {
+    background-color: #e20000;
+    border-color: #e20000;
+}
+
+.cart-item .rounded-checkbox:checked::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.span,
+.quantity-input{
+    height: 30px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00000066;
+
+}
+
+
+/* Hover effects */
+.quantity-input {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background: #fff;
+    
+}
+.decrease-btn,
+.increase-btn {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    background: #fff;
+    border: 2px solid #00000066;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.decrease-btn:hover,
+.increase-btn:hover {
+    background: #f5f5f5;
+    border-color: #e20000;
+    color: #e20000;
+}
+
+.decrease-btn:active,
+.increase-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity-input {
+    width: 45px;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-input:focus {
+    border-color: #e20000;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(226, 0, 0, 0.1);
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* .quantity-input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+/* Optional: Style for the delete icon */
+.delete-wrapper ion-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+}
+
+.delete-wrapper ion-icon:hover {
+    color: #ff0000;
+}
+.price-quantity-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Loại bỏ mũi tên trong input number */
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

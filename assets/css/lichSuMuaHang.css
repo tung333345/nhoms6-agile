@@ -1,0 +1,84 @@
+.order-history {
+    max-width: 130rem;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.order-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.order-status {
+    font-size: 14px;
+    color: #615b5b;
+    background-color: #ece8e8;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+    border-radius: 2px;
+}
+.product-info img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+.product-info {
+  display: flex;
+  align-items: center;
+}
+.btn-detail {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+.avarta{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* Giảm khoảng cách giữa các nút */
+.order-history .btn {
+margin: 0 5px; /* Chỉ còn 5px khoảng cách giữa các nút */
+padding: 8px 12px; /* Kích thước nút gọn hơn */
+font-size: 14px; /* Cỡ chữ nhỏ hơn */
+}
+
+h4{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 23px;
+}
+p{
+    font-size: 15px;
+
+}
+.all{
+    margin: 20px 0;
+}
+.detail{
+    font-size: 13px;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.date{
+    margin-bottom: 50px;
+
+}
+h5{
+    font-size: 20px;
+}
+.price{
+    font-size: 20px;
+}
